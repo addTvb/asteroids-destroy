@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+
+:root {
+  --white: #fff;
+  --black: #000;
+  --gray: #E3E5E5;
+  --orange: #F86600;
+  --orange-smooth: rgba(248, 103, 0, 0.15);
+  --red-smooth: #F5DED9;
+}
+
+* {
+  font-family: 'Inter', sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scrollbar-color: var(--orange) #3f3f3f;
+  scrollbar-width: thin;
+}
+
+body {
+  color: var(--white);
+  background: var(--black);
+  background-image: url('/earth.png');
+  background-repeat: no-repeat;
+  background-position: -340px 100px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #3f3f3f;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--orange);
+  border-radius: 10px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+@media (min-width: 900px) {
+  body {
+    background-position: -300px 130px;
+  }
+}
+
+@media (min-width: 1000px) {
+  body {
+    background-position: -235px 130px;
+  }
+}
+
+@media (min-width: 1150px) {
+  body {
+    background-position: -160px 130px;
+  }
+}
+
+@media (min-width: 1250px) {
+  body {
+    background-position: -100px 130px;
+  }
+}
+
+@media (min-width: 1450px) {
+  body {
+    background-position: 0 130px;
+  }
+}

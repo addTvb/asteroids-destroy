@@ -1,0 +1,22 @@
+.loading {
+	min-width: 50px;
+	width: 50px;
+	max-width: 50px;
+	min-height: 50px;
+	height: 50px;
+	max-height: 50px;
+	border-radius: 200px;
+	border: 3px solid transparent;
+	border-top-color: var(--orange);
+	border-bottom-color: var(--white);
+	animation: load 2s ease infinite;
+}
+
+@keyframes load {
+	from {
+		transform: rotate(0);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}

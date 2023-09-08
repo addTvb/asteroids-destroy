@@ -1,0 +1,17 @@
+.measure-toggle {
+	display: flex;
+	gap: 5px;
+	align-items: center;
+	& button {
+		border: none;
+		background: none;
+		color: var(--white);
+		text-decoration: underline;
+		font-size: 16px;
+		line-height: 24px;
+	}
+	& button.selected {
+		text-decoration: none;
+		font-weight: 700;
+	}
+}

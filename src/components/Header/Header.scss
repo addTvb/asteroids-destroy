@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@700&display=swap');
+
+.header {
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	gap: 8px;
+    padding: 16px;
+    max-width: 320px;
+
+	& .title {
+		color: var(--orange);
+		font-family: 'Passion One', cursive;
+		font-size: 32px;
+		font-weight: 700;
+		line-height: normal;
+	}
+	& .description {
+		color: var(--white);
+		font-family: Arial;
+		font-size: 16px;
+		line-height: 24px;
+		align-self: stretch;
+	}
+}

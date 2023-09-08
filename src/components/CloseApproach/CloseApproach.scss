@@ -1,0 +1,12 @@
+.approach {
+    // display: flex;
+    // flex-direction: column;
+    & .date {
+        font-size: 18px;
+        font-weight: 700;
+    }
+    
+    & .value {
+        font-weight: 700;
+    }
+}

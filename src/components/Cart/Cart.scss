@@ -1,0 +1,122 @@
+.cart-preview {
+	background: #232526;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding: 16px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	& .info {
+		display: flex;
+		flex-direction: column;
+		line-height: 24px;
+		& .title {
+			font-size: 18px;
+			font-weight: 700;
+		}
+		& .count {
+			font-size: 16px;
+		}
+	}
+}
+.modal-wrapper {
+	width: 100vw;
+	height: 100vh;
+	z-index: 5;
+	position: absolute;
+	left: 0;
+	top: 0;
+	overflow: hidden;
+	background: rgba(0, 0, 0, 0.7);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	& .cart-modal {
+		width: 90vw;
+		min-height: 300px;
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		background: #232526;
+		border-radius: 10px;
+		padding: 20px;
+		& .title {
+			font-weight: 700;
+			font-size: 24px;
+		}
+		& .cross {
+			position: absolute;
+			top: 10px;
+			right: 10px;
+			border: none;
+			background: var(--orange);
+			font-weight: bold;
+			width: 25px;
+			height: 25px;
+			text-align: center;
+			border-radius: 50%;
+			font-size: 12px;
+		}
+		& .actions {
+			display: flex;
+			gap: 10px;
+			align-items: center;
+		}
+		& .empty-cart {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 100%;
+			font-size: 20px;
+			margin-top: 30px;
+		}
+		& .container {
+			max-height: 60vh;
+			overflow-y: auto;
+			display: grid;
+			grid-template-columns: 1fr;
+			gap: 30px 10px;
+		}
+	}
+}
+@media (min-width: 900px) {
+	.cart-preview {
+		border-radius: 24px;
+		position: inherit;
+		width: 150px;
+		height: 160px;
+		padding: 16px;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.modal-wrapper {
+		& .cart-modal {
+			& .container {
+				grid-template-columns: 1fr 1fr;
+			}
+		}
+	}
+}
+
+@media (min-width: 1300px) {
+	.modal-wrapper {
+		& .cart-modal {
+			& .container {
+				grid-template-columns: 1fr 1fr 1fr;
+			}
+		}
+	}
+}
+@media (min-width: 1700px) {
+	.modal-wrapper {
+		& .cart-modal {
+			& .container {
+				grid-template-columns: 1fr 1fr 1fr 1fr;
+			}
+		}
+	}
+}

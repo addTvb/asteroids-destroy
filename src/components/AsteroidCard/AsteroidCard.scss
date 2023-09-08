@@ -1,0 +1,50 @@
+.asteroid-card {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	& .title {
+		font-size: 24px;
+		font-weight: 700;
+		line-height: 32px;
+	}
+	& .center {
+		display: flex;
+		align-items: center;
+		gap: 8px;
+		& .distance {
+			display: flex;
+			flex-direction: column;
+			font-size: 16px;
+			line-height: 24px;
+		}
+		& .info {
+			display: flex;
+			flex-direction: column;
+			gap: 2px;
+			& .name {
+				font-size: 16px;
+				font-weight: 700;
+				line-height: 24px;
+				text-decoration-line: underline;
+			}
+			& .diameter {
+				font-size: 12px;
+				line-height: 16px;
+			}
+		}
+	}
+	& .bottom {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		& .danger-text {
+			color: var(--gray);
+			font-size: 14px;
+			line-height: 20px;
+            & .icon {
+                color: yellow;
+            }
+		}
+        
+	}
+}
